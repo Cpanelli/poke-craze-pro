@@ -1,9 +1,9 @@
 // App.jsx
 
 import React from 'react';
-import Header from './Header';
+import Header from './components/Header';
 import CardDisplay from './components/CardDisplay';
-import Footer from './Footer';
+import Footer from './components/Footer';
 import { Container } from '@mui/material';
 
 const App = () => {
