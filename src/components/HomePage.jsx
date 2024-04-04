@@ -9,8 +9,15 @@ import CategoryNavigation from "./CategoryNavigation";
 import Footer from "./Footer";
 import { Container, Typography } from "@mui/material";
 import RegistrationForm from "./RegistrationForm";
+import SetSelectionSection from "./SetSelectionSection"; // Import the SetSelectionSection component
 
 const HomePage = () => {
+  const handleSetSelection = (selectedSet) => {
+    // handle the selection of a Pokémon set
+    console.log("Selected set:", selectedSet);
+    //  implement further actions here, such as fetching cards data for the selected set
+  };
+
   return (
     <div>
       <Header />
@@ -19,8 +26,7 @@ const HomePage = () => {
           Welcome to PokeCraze!
         </Typography>
         <Typography variant="body1" align="center" gutterBottom>
-          {" "}
-          Your ultimate destination for all things Pokemon.{" "}
+          Your ultimate destination for all things Pokemon.
         </Typography>
         <HeroSection />
         <BestSellingCardsSection />
@@ -28,6 +34,11 @@ const HomePage = () => {
         <AboutSection />
         <SearchBar />
         <CategoryNavigation />
+        <SetSelectionSection
+          sets={setsData}
+          onSelectSet={handleSetSelection}
+        />{" "}
+        {/* Pass setsData and handleSetSelection as props */}
         <RegistrationForm />
       </Container>
       <Footer />
