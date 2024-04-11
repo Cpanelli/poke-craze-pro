@@ -46,3 +46,5 @@ const CardComponent = ({ card }) => {
     );
 };
 export default CardComponent;
+
+

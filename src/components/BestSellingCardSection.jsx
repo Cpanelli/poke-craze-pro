@@ -24,15 +24,15 @@ const useStyles = makeStyles((theme) => ({
         boxShadow: '0 4px 8px rgba(0,0,0,0.2)',
         transition: 'transform 0.3s ease',
         '&;hover': {
-            transfrom: 'scale(1.05',
+            transform: 'scale(1.05',
         },
     },
 }));
 
-const BestSellingCardsSection = () => {
-     const clsees = useStyles();
+const BestSellingCardSection = () => {
+     const classes = useStyles();
 
-     returen (
+     return (
         <Box className={classes.section}>
             <Typography variant = "h4" align="center" className={classes.title}>
                 Best Selling Cards
@@ -44,4 +44,4 @@ const BestSellingCardsSection = () => {
 };
 
 
-export default BestSellingCardsSection;
+export default BestSellingCardSection;

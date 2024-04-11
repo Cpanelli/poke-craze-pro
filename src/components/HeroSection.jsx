@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography, Button, Grid } from "@mui/material";
 import { makeStyles } from "@mui/styles";
-import heroImage from "../images/hero-image.png";
+import heroImage from "../images/heroimg.jpg";
 
 const useStyles = makeStyles((theme) => ({
     heroSection:{

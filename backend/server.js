@@ -13,7 +13,7 @@ app.use(cors());
 
 // Routes
 app.get('/', (req, res) => {
-    res.send('Welcome to the PokeCrazePro API!');
+    res.send('Welcome to the PokeCrazePro!');
 });
 
 

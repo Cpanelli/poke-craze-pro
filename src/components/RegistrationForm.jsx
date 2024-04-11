@@ -27,27 +27,25 @@ const RegistrationForm = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-
+  
     try {
       const response = await Axios.post("your_registration_endpoint", {
-        firstName,
-        lastName,
         email,
         password,
-        confirmPassword,
       });
-
-      // Handle successful registration response
+  
+      // handle successful registration response
       console.log("User registered successfully:", response.data);
-
+  
       // you can perform additional actions after successful registration
     } catch (error) {
-      // Handle registration error
+      // handle registration error
       console.error("Error registering user:", error.response.data);
-
-      //  you can display an error message to the user
+  
+      // you can display an error message to the user
     }
   };
+  
 
   return (
     <Grid container spacing={2} justifyContent="center">

@@ -2,18 +2,14 @@
 
 import React from 'react';
 import Header from './components/Header';
-import CardDisplay from './components/CardDisplay';
 import Footer from './components/Footer';
-import { Container } from '@mui/material';
+import HomePage from './components/HomePage'; // Import the HomePage component
 
 const App = () => {
   return (
     <div>
       <Header />
-      <Container maxWidth="lg">
-        {/*  main content goes here */}
-        <CardDisplay/>
-      </Container>
+      <HomePage /> {/* Render the HomePage component */}
       <Footer />
     </div>
   );
